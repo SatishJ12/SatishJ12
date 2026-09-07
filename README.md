@@ -6,14 +6,8 @@
 
 **Building AI-powered products • Exploring GenAI • Solving real-world problems with AI**
 
-<p>
-  <a href="https://github.com/SatishJ12">
-    <img src="https://img.shields.io/badge/GitHub-SatishJ12-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/satish-kumar-jaiswal-a5139648/">
-    <img src="https://img.shields.io/badge/LinkedIn-Satish%20Kumar%20Jaiswal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-</p>
+[![GitHub](https://img.shields.io/badge/GitHub-SatishJ12-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SatishJ12)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/satish-kumar-jaiswal-a5139648/)
 
 </div>
 
@@ -298,17 +292,13 @@ I'm interested in conversations around:
 
 **AI Products • Generative AI • AI Agents • RAG • LLMs • Product Management • AI Strategy • Responsible AI**
 
-<div align="center">
+<p align="center">
 
 <a href="https://www.linkedin.com/in/satish-kumar-jaiswal-a5139648/">
-<img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="https://github.com/SatishJ12">
-<img src="https://img.shields.io/badge/GitHub-Explore%20My%20Projects-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-</div>
+</p>
 
 ---
 
@@ -319,4 +309,3 @@ I'm interested in conversations around:
 ⭐ **Explore my repositories and follow my AI product journey.**
 
 </div>
-
