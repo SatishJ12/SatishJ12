@@ -107,20 +107,26 @@ The solution focuses on balancing:
 
 ---
 
-## 🧠 Generative AI Experiments
+## 🛒 ShopMate — AI Shopping Agent
 
-A growing collection of experiments exploring:
+**Conversational shopping assistant with tool-calling, photo search and memory**
 
-* LLM applications
-* Prompt engineering
-* RAG architectures
-* AI agents
-* Conversational AI
-* AI-powered automation
-* AI product concepts
-* LLM evaluation
+A pantry-store shopping agent that lets a shopper describe what they want in plain language, or upload a photo, and get back a scannable product list with live ratings — then place an order once they explicitly confirm. Built with the same product instincts as **rag-chatbot** — grounded answers, explicit guardrails, a human confirmation before anything irreversible — applied to an agentic, tool-calling shape instead of a retrieval one.
 
-The objective is not simply to experiment with AI models, but to understand **where AI creates genuine product value**.
+### Product Focus
+
+`AI Agents` `LLM Tool Calling` `Vision` `Conversational Commerce` `Guardrails` `Personalization`
+
+### Product Questions I'm Exploring
+
+* How do you keep an LLM's output format reliable enough to be testable?
+* Where should guardrails live — prompt, code, or both?
+* How much should an agent remember across sessions, and where should that state live?
+* What does "the agent is working" look like as a set of product and AI-quality metrics?
+* What does a shopping agent cost per conversation, and does that change the design?
+
+🔗 **Repository:**
+https://github.com/SatishJ12/shopping-agent
 
 ---
 
