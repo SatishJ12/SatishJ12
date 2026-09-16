@@ -130,6 +130,23 @@ https://github.com/SatishJ12/shopping-agent
 
 ---
 
+# 🧪 Also Building: Engineering & Automation Tooling
+
+## 🖥️ Website E2E Tester
+
+**PowerShell + Selenium end-to-end testing automation**
+
+A traditional (non-AI) automation framework that logs into websites, validates page content against CSS selectors, and captures screenshots at every step — producing Excel and Word test reports. Configurable per site via CSV, with encrypted credential storage (DPAPI) and Windows Task Scheduler integration for unattended, scheduled runs.
+
+### Focus
+
+`PowerShell` `Selenium` `Browser Automation` `QA Engineering` `Test Reporting`
+
+🔗 **Repository:**
+https://github.com/SatishJ12/website-e2e-tester
+
+---
+
 # 🧩 My AI Product Philosophy
 
 > **Start with the problem, not the model.**
