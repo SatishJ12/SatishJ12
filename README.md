@@ -150,8 +150,8 @@ A Manifest V3 Chrome extension that extracts the real content of a page — stri
 * **Three modes (Article / Full page / Selection)** — a fallback whenever automatic extraction is wrong
 * **Tiny footprint** — no frameworks; the whole extension is smaller than most single images
 
-🔗 **Repository:** https://github.com/SatishJ12/web-page-to-markdown
-🌐 **Support site:** https://satishj12.github.io/web-page-to-markdown/
+🔗 **Repository:** https://github.com/SatishJ12/web-page-to-markdown    
+🌐 **Support site:** https://satishj12.github.io/web-page-to-markdown/        
 🧩 **Chrome Web Store:** https://chromewebstore.google.com/detail/fmbinlegholbmghcdbibjkdcbkcnolip
 
 ---
