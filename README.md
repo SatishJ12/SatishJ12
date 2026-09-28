@@ -132,6 +132,30 @@ https://github.com/SatishJ12/shopping-agent
 
 # 🧪 Also Building: Engineering & Automation Tooling
 
+## 🧩 Web Page to Markdown Converter — Chrome Extension
+
+**Turn any web page into clean, LLM-ready Markdown in one click**
+
+A Manifest V3 Chrome extension that extracts the real content of a page — stripping ads, navbars, sidebars and cookie banners with a readability-style algorithm — and converts it into clean Markdown for **ChatGPT / Claude prompts, Obsidian, Notion and GitHub**. Code blocks keep their language tags, HTML tables become GitHub-style tables, and a live token counter shows what will fit in a prompt. Everything runs **100% locally** — no servers, no tracking, no remote code — in a **~50 KB** package built with vanilla JavaScript and zero dependencies.
+
+### Product Focus
+
+`Chrome Extension` `Manifest V3` `Vanilla JS` `LLM Context Prep` `Privacy by Design` `Developer Tools`
+
+### Product Decisions I Made
+
+* **Least-privilege permissions** — `activeTab` + `scripting` instead of access to all sites, so users trust it and Web Store review passes faster
+* **Local-only processing** — works on paywalled and internal pages without any data leaving the browser
+* **Built for LLM workflows** — compact output + token estimate, because context windows cost money
+* **Three modes (Article / Full page / Selection)** — a fallback whenever automatic extraction is wrong
+* **Tiny footprint** — no frameworks; the whole extension is smaller than most single images
+
+🔗 **Repository:** https://github.com/SatishJ12/web-page-to-markdown
+🌐 **Support site:** https://satishj12.github.io/web-page-to-markdown/
+🧩 **Chrome Web Store:** https://chromewebstore.google.com/detail/fmbinlegholbmghcdbibjkdcbkcnolip
+
+---
+
 ## 🖥️ Website E2E Tester
 
 **PowerShell + Selenium end-to-end testing automation**
@@ -209,7 +233,7 @@ For every AI product, I try to ask:
 
 `Python` `APIs` `Embeddings` `Vector Search` `RAG Pipelines`
 
-`LangChain` `LLM APIs` `Tool Calling` `Agentic Workflows`
+`LangChain` `LLM APIs` `Tool Calling` `Agentic Workflows` `Chrome Extensions`
 
 ### 📦 Product Management
 
