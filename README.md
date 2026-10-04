@@ -82,6 +82,10 @@ I built **two prototypes** of the same product so stakeholders could choose with
 | **Guardrails** | No "safe" state, decision log per High finding, counsel-escalation rules | All of v1, plus access token, rate limits, daily LLM cap, prompt-injection test |
 | **Tests** | 13 golden cases | 13 golden + 50 backend + 12 frontend |
 
+<p align="center">
+  <img src="assets/v1_vs_v2_comparison.svg" alt="Prototype Comparison: v1 vs v2 on latency, cost, setup, AI depth and tests" width="780">
+</p>
+
 ### ✅ Pros / ⚠️ Cons
 
 **v1 — Streamlit**
