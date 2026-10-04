@@ -58,6 +58,63 @@ I'm currently building and experimenting with AI solutions that explore how emer
 
 # 🤖 Featured AI Projects
 
+## ⚖️ AtliQ Contract Risk Analyzer — Capstone Project (Codebasics AI PM)
+
+**An AI copilot that reviews a contract before the CEO signs it**
+
+**The problem.** AtliQ Technologies is an IT services firm (India + USA entities) with **no legal team**. The CEO signs every client MSA, SOW, NDA, HIPAA BAA and freelancer agreement himself, often late at night under deadline pressure. The real risks were not in any one contract but *between* them: a non-compete signed two years ago that a new deal would breach, an uncapped liability clause buried on page 11, the wrong AtliQ entity on the signature block, a healthcare deal with no BAA, an EU deal with no DPA, and negotiation history that lived only in the CEO's memory.
+
+**What I did as the PM.** User research → AI opportunity map → AI PRD → cost model → two working prototypes → stakeholder deck.
+
+* **North Star:** *Safe Signature Rate*, the share of contracts signed with every High-risk finding resolved or consciously accepted (target 90% by month 3)
+* **Design principle:** the AI never says a contract is "safe". It flags, quotes the exact clause, and escalates to counsel; the human decides and the decision is logged
+* **Hybrid by design:** deterministic rules (the CEO's own checklist as code) + a register of commitments from 17 signed contracts + an LLM layer on top, so the tool still works when the AI is down or wrong
+* **Evaluated on golden cases:** 13 hand-labelled contract scenarios (hidden non-competes, missing sub-BAA, pay-when-paid, fake "mutual" NDA, MFN clash) plus clean controls that must *not* be flagged
+* **Unit economics:** ~$0.30 per contract, ~$330 / year in Year 1
+
+I built **two prototypes** of the same product so stakeholders could choose with evidence instead of opinions.
+
+| | **v1 — Streamlit** | **v2 — React + FastAPI + LLM-as-Judge** |
+|---|---|---|
+| **Stack** | Python + Streamlit | React (Vite, TypeScript, Tailwind) + FastAPI |
+| **AI approach** | Rules + register, then **one** LLM review pass (Claude); quotes string-matched against the contract | Rules + register, then a **two-stage pipeline** on Groq: a small model extracts risky clauses, a larger model **judges** each finding (confirm / escalate / dismiss); any disagreement or unverified quote → *Needs Human Review* |
+| **Deploy** | GitHub Pages via **stlite** (Python in the browser, no server) | GitHub Pages frontend (offline demo mode) + **Render** backend for live AI |
+| **Guardrails** | No "safe" state, decision log per High finding, counsel-escalation rules | All of v1, plus access token, rate limits, daily LLM cap, prompt-injection test |
+| **Tests** | 13 golden cases | 13 golden + 50 backend + 12 frontend |
+
+### ✅ Pros / ⚠️ Cons
+
+**v1 — Streamlit**
+* ✅ Fastest to ship; one Python codebase
+* ✅ No server: runs entirely in the browser, works offline, $0 hosting
+* ✅ Simple to explain and demo
+* ⚠️ Single LLM pass: no second opinion on what the model flags
+* ⚠️ The browser build runs rules + register only; the AI review needs the Python app run with an API key
+* ⚠️ Basic UI, harder to evolve into a real product
+
+**v2 — React + LLM-as-Judge**
+* ✅ Product-grade UI: review queue, commitment register, finding cards, review brief
+* ✅ Second model checks the first, cutting false alarms and surfacing uncertainty to the human
+* ✅ Live AI backend with auth and spend limits
+* ⚠️ More moving parts: two deploys, env vars, a token to manage
+* ⚠️ Two model calls → slower (est. ~14–18 s vs ~8–12 s) and slightly more expensive (~$0.33 vs ~$0.30 per contract)
+* ⚠️ Free-tier LLM token limits block most live reviews, so a real rollout needs a paid tier
+
+### 🧭 Why two versions?
+
+Prototype progression and stakeholder choice. v1 proved the core value quickly: rules + memory of past commitments catch most of the dangerous clauses. v2 tests the next AI PM question: **is a second "judge" model worth the extra latency, cost and complexity in exchange for fewer false alarms and clearer escalation?** Stakeholders get both side by side with SWOT, cost and latency. My recommendation: ship v1 now, grow into v2 once the judge earns its cost.
+
+### Product Focus
+
+`Legal AI` `LLM-as-Judge` `Hybrid Rules + LLM` `Evaluation` `Human-in-the-Loop` `Guardrails` `Prototype Comparison`
+
+🔗 **v1 Repository:** https://github.com/SatishJ12/atliq-contract-analyzer  
+🌐 **v1 Live demo:** https://satishj12.github.io/atliq-contract-analyzer/  
+🔗 **v2 Repository:** https://github.com/SatishJ12/atliq-contract-analyzer-v2  
+🌐 **v2 Live demo:** https://satishj12.github.io/atliq-contract-analyzer-v2/
+
+---
+
 ## 🔎 RAG Chatbot
 
 **Telecom Customer Support Assistant powered by RAG**
